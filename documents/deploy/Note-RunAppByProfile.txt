@@ -1,0 +1,26 @@
+# =========================================================================
+# Cách run webapps Tomcat thông thường:
+./bin/start.sh
+
+# Cách run webapps Tomcat sử dụng profile
+Bổ sung những dòng sau vào file web.xml 
+(1. Vị trí file: tomcatHomeFolder/conf/web.xml)
+(2. Vị trí bổ sung: nằm trong thẻ <web-app> </web-app>)
+<web-app>
+	...
+	<context-param>
+		<param-name>spring.profiles.active</param-name>
+		<param-value> <<tên profile>> </param-value>
+	</context-param>
+	...
+</web-app>
+
+Ví dụ:
+<web-app>
+	...
+	<context-param>
+		<param-name>spring.profiles.active</param-name>
+		<param-value>prod</param-value>
+	</context-param>
+	...
+</web-app>

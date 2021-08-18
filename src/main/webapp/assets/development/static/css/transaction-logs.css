@@ -1,0 +1,33 @@
+.select2-choice {
+  height: 37px !important;
+  margin-left: 5px;
+}
+
+.select2-chosen {
+  font-size: 14px;
+  color: #333333;
+}
+
+.select2-container {
+  margin: 0 !important;
+  margin-bottom: 3px;
+}
+
+.select2-container .select2-choice {
+  border-color: #ccc;
+  border-radius: 4px;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .select2-container {
+    width: 100% !important;
+    display: block;
+    margin-bottom: 5px !important;
+  }
+
+  .select2-container .select2-choice {
+    margin-bottom: 5px;
+  }
+}

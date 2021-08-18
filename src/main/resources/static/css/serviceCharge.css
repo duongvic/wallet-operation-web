@@ -1,0 +1,10 @@
+.spanValidate {color: #FF0000;position: relative;top: 9px;left: 4px;}
+
+.input-group .inputServiceCharge {border: 1px solid #ccc;}
+
+select#parentServiceCode option:checked {background-color: #5bc0de;}
+select#parentServiceCodeEdit option:checked {background-color: #5bc0de;}
+
+input.form-control.inputServiceCharge {border: 1px solid #ccc;}
+
+.col-action {max-width: 5.2em;width: 5.2em;}

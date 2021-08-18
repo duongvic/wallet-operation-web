@@ -1,0 +1,6 @@
+,API Transaction Logs,,,,,,,,,,,,
+,,,,,,,,,,,,,
+STT,Time,Trans ID,Merchant,Provider,Service,Face Value (VND),"Subject
+(Serial or tel)",Capital Value (VND),Amount (VND),Commission (VND),Pre Balance (VND),Post Balance (VND) ,Status
+,,,,,,,,,,,,,
+Total,,,,,,,,,,,,,

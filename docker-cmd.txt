@@ -1,0 +1,33 @@
+mvn clean package -DskipTests
+unzip -q target/wallet-operation-web-1.0.0.war -d target/java-app
+
+cat hosts-prod > hosts
+
+docker ps -a
+
+docker stop wallet-operation-web
+
+docker rm -f wallet-operation-web
+
+docker images -a | grep "wallet-operation-web" | awk '{print $3}' | xargs docker rmi
+
+docker build -t zopay/wallet-operation-web:1.0.0 --rm=true .
+
+docker run -d -p 11100:11100 --network "host" --name "wallet-operation-web" \
+-e "SPRING_PROFILES_ACTIVE=local" \
+-e JAVA_OPTS="-Xms2048m -Xmx4096m -Xmn512m -XX:SurvivorRatio=8" \
+zopay/wallet-operation-web:1.0.0
+
+docker logs wallet-operation-web
+
+docker inspect wallet-operation-web
+
+
+docker exec -it wallet-operation-web /bin/bash
+
+
+docker run -d -p 11100:11100 --network "host" --name "wallet-operation-web" \
+-v /opt/ewallet:/opt/ewallet \
+-e "SPRING_PROFILES_ACTIVE=local" \
+-e JAVA_OPTS="-Xms2048m -Xmx4096m -Xmn512m -XX:SurvivorRatio=8" \
+zopay/wallet-operation-web:1.0.0

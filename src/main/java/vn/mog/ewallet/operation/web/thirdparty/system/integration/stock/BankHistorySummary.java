@@ -1,0 +1,19 @@
+package vn.mog.ewallet.operation.web.thirdparty.system.integration.stock;
+
+import lombok.Data;
+
+@Data
+public class BankHistorySummary {
+
+  public static final String COUNT_FILTERED = "countFiltered";
+  public static final String TXN_TYPE = "txnType";
+  public static final String TOTAL_AMOUNT = "totalAmount";
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////////////////////
+
+  private Long countFiltered;
+  private String txnType;
+  private Long totalAmount;
+}

@@ -1,0 +1,5 @@
+package vn.mog.ewallet.operation.web.thirdparty.system.integration.payment.contract.transaction;
+
+public class BillPaymentTransactionOnHoldByBatchResponse
+    extends BillPaymentTransactionOnHoldByBatchResponseType {
+}

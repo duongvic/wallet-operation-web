@@ -1,0 +1,178 @@
+.show-infor {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  cursor: pointer;
+  top: 3px;
+}
+
+.show-infor .text {
+  position: absolute;
+  height: 100%;
+  color: #F58220;
+  line-height: 28px;
+  font-size: 1.8rem;
+}
+
+.show-infor .icon {
+  position: absolute;
+  left: 13em;
+  height: 100%;
+  line-height: 28px;
+}
+
+.draw-pieChart {
+  width: 37.47em !important;
+  height: 21em;
+  margin-left: -10em;
+}
+
+.draw-no-data {
+  position: relative;
+  /*float: left;*/
+  /*width: 100%;*/
+  /*height: 300px;*/
+  width: 37.47em;
+  height: 21em;
+  margin-left: -9em;
+}
+
+.draw-no-data .draw-circle {
+  position: absolute;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  left: 27%;
+  width: 200px;
+  height: 200px;
+  border-radius: 130px;
+  background-color: #e8eaed;
+  border: 1px solid #757575;
+}
+
+.draw-no-data .draw-circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #757575;
+}
+
+.content-pie-chart {
+  padding: 0.3em 1em !important;
+  margin-bottom: 1em;
+}
+
+.content-table-chart {
+  padding: 0.3em 1em;
+}
+
+/* Dành cho màn hình desktop */
+@media all and (min-width: 1280px) {
+  .content-pie-chart {
+    width: 48.5%;
+    float: left;
+    margin-right: 1.5%;
+  }
+
+  .content-table-chart {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .draw-pieChart {
+    width: 37.47em !important;;
+    height: 21em;
+    margin-left: auto;
+  }
+
+  .draw-no-data .draw-circle {
+    left: 27%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .draw-pieChart {
+    width: 700px !important;;
+    height: 350px;
+    /*margin-left: 0!important;*/
+  }
+
+  .draw-no-data .draw-circle {
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .draw-pieChart {
+    width: 700px !important;;
+    height: 500px;
+    /*margin-left: -10.5em;*/
+    margin-left: 3em;
+  }
+
+  .draw-no-data .draw-circle {
+    left: 50%;
+  }
+}
+
+.paginationTableChart {
+  display: inline-block;
+}
+
+.paginationTableChart a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.paginationTableChart a.active {
+  background-color: #f58220;
+  border-radius: 4px;
+  color: white;
+}
+
+.paginationTableChart a:hover:not(.active) {
+  border-radius: 4px;
+  background-color: #ddd;
+}
+
+svg rect {
+  fill-opacity: 0;
+}
+
+.content-block1 {
+  padding: 0.3em 1em !important;
+  margin-bottom: 1em;
+}
+
+.content-block2 {
+  padding: 0.3em 1em;
+}
+/*Tablet*/
+@media screen and (min-width: 600px) {
+
+  .content-main:before, .content-main:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .content-main {
+    max-width: 100%;
+  }
+  .content-block1 {
+    width: 48.5%;
+    float: left;
+    margin-right: 1.5%;
+  }
+
+  .content-block2 {
+    width: 50%;
+    float: left;
+    padding-top: 7em;
+  }
+
+}

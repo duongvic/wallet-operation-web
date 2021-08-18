@@ -1,0 +1,28 @@
+
+.btn {
+  height: 36px;
+}
+
+.dashboard-item-center {
+  padding: 8px 8px 0 8px;
+}
+
+.dashboard-item-right {
+  padding: 8px 0 0 8px;
+}
+
+.dashboard-item-left {
+  padding: 8px 8px 0 0;
+}
+/*.el-first {
+  margin-right: 3px !important;
+  margin-bottom: 6px !important;
+}*/
+
+@media only screen and (max-width: 767px) {
+
+  .dashboard-item {
+    padding: 8px 0 0 0;
+  }
+
+}

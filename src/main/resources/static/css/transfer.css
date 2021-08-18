@@ -1,0 +1,35 @@
+.content-block1, .content-block2 {
+  box-sizing: border-box;
+}
+
+.content-block1 {
+  padding: 0.3em 1em;
+  margin-bottom: 1em;
+}
+
+.content-block2 {
+  padding: 0.3em 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .content-block1 {
+    width: 48.5%;
+    float: left;
+    margin-right: 1.5%;
+  }
+
+  .content-block2 {
+    width: 50%;
+    float: left;
+  }
+}
+
+/* Dành cho máy tính bảng chiều ngang */
+@media all and (min-width: 1024px) {
+  .draw-pieChart {
+    width: 50em;
+    height: 25em;
+    margin-left: -3.5em;
+  }
+}
+

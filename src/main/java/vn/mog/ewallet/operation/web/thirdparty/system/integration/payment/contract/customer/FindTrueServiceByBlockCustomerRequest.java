@@ -1,0 +1,10 @@
+package vn.mog.ewallet.operation.web.thirdparty.system.integration.payment.contract.customer;
+
+public class FindTrueServiceByBlockCustomerRequest
+    extends FindTrueServiceByBlockCustomerRequestType {
+
+  public FindTrueServiceByBlockCustomerRequest() {
+    super();
+  }
+
+}

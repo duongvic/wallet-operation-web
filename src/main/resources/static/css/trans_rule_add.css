@@ -1,0 +1,13 @@
+.select-actor {
+  display: inline;
+  /*width: 20%;*/
+  width: 30%;
+  height: 46px;
+  margin-right: 6px;
+}
+.cl-65 {
+  width: 65% !important;
+  height: 36px;
+  padding: 0px;
+  border-radius: 2px;
+}

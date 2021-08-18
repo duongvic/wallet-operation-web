@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+  xmlns="http://java.sun.com/xml/ns/j2ee"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd">
+  <description>ewallet functions library</description>
+  <display-name>ewallet functions library</display-name>
+  <tlib-version>1.0</tlib-version>
+  <short-name>ewallet</short-name>
+  <uri>https://processing.function.template/service/jsp/jstl/functions</uri>
+
+  <function>
+    <description>Code Telco transforms a vietnamese name</description>
+    <name>getNameTelco</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String getNameTelco(java.lang.String)</function-signature>
+    <example>${ewallet:getNameTelco(testString)}</example>
+  </function>
+
+  <function>
+    <description>Number transforms a vietnamess text</description>
+    <name>numberToText</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String numberToText(java.lang.String)</function-signature>
+    <example>${ewallet:numberToText(number)}</example>
+  </function>
+
+  <function>
+    <description>Number format a vietnamess currency</description>
+    <name>formatNumber</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String formatNumber(java.lang.String)</function-signature>
+    <example>${ewallet:formatNumber(number)}</example>
+  </function>
+
+  <function>
+    <description>Invoice type code name</description>
+    <name>getInvoiceTypeCodeName</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String getInvoiceTypeCodeName(java.lang.String)</function-signature>
+    <example>${ewallet:getInvoiceTypeCodeName(invoiceTypeId)}</example>
+  </function>
+
+  <function>
+    <description>Txn Status Name</description>
+    <name>getTxnStatusName</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String getTxnStatusName(java.lang.Integer)</function-signature>
+    <example>${ewallet:getTxnStatusName(txnStatusId)}</example>
+  </function>
+
+  <function>
+    <description>FundOrder Status Name</description>
+    <name>getFundOrderStatusName</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String getFundOrderStatusName(java.lang.Integer)</function-signature>
+    <example>${ewallet:getFundOrderStatusName(status)}</example>
+  </function>
+
+
+  <function>
+    <description>addition Signature in URL</description>
+    <name>isSignature</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String isSignature(java.lang.String, java.lang.String)</function-signature>
+    <example>${ewallet:isSignature(url, menu)}</example>
+  </function>
+
+  <function>
+    <description>toUpperCase</description>
+    <name>toUpperCase</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String toUpperCase(java.lang.String)</function-signature>
+    <example>${ewallet:toUpperCase(str)}</example>
+  </function>
+
+  <function>
+    <description>getProviderBizCode</description>
+    <name>getProviderBizCode</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String getProviderBizCode(java.lang.String)</function-signature>
+    <example>${ewallet:getProviderBizCode(str)}</example>
+  </function>
+
+  <function>
+    <description>getRankingGroupString</description>
+    <name>getRankingGroupString</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String getRankingGroupString(java.lang.Integer)</function-signature>
+    <example>${ewallet:getRankingGroupString(str)}</example>
+  </function>
+
+  <function>
+    <description>getRankingLevelString</description>
+    <name>getRankingLevelString</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String getRankingLevelString(java.lang.Integer)</function-signature>
+    <example>${ewallet:getRankingLevelString(str)}</example>
+  </function>
+
+  <function>
+    <description>getTopupViettelNameByCode</description>
+    <name>getTopupViettelNameByCode</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String getTopupViettelNameByCode(java.lang.String)</function-signature>
+    <example>${ewallet:getTopupViettelNameByCode(str)}</example>
+  </function>
+
+  <function>
+    <description>getGrowthPercent</description>
+    <name>getGrowthPercent</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>Double getGrowthPercent(java.lang.Long, java.lang.Long)</function-signature>
+    <example>${ewallet:getGrowthPercent(current, pass)}</example>
+  </function>
+
+  <function>
+    <description>getRomanNumeralByInt</description>
+    <name>getRomanNumeralByInt</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>String getRomanNumeralByInt(java.lang.Integer)</function-signature>
+    <example>${ewallet:getRomanNumeralByInt(i)}</example>
+  </function>
+
+  <function>
+    <description>getDayBetween</description>
+    <name>getDayBetween</name>
+    <function-class>vn.mog.ewallet.operation.web.utils.WalletTagLib</function-class>
+    <function-signature>Integer getDayBetween(java.util.Date, java.util.Date)</function-signature>
+    <example>${ewallet:getDayBetween(date1, date2)}</example>
+  </function>
+  
+</taglib>
